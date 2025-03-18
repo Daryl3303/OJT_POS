@@ -20,9 +20,9 @@ const POSDashboard = () => {
     };
 
     return (
-        <div className="flex bg-gray-900 text-white min-h-screen">
+        <div className="flex bg-gray-900 text-white h-full w-full">
             {/* Sidebar */}
-            <div className={`fixed h-full bg-gray-800 text-white p-4 transition-all duration-300 ${sidebarOpen ? 'w-60' : 'w-16'}`}>
+            <div className={`h-full bg-gray-800 text-white p-4 transition-all duration-300 ${sidebarOpen ? 'w-60' : 'w-16'}`}>
                 <button className="text-white mb-4" onClick={toggleSidebar}>
                     {sidebarOpen ? <FiX className="text-2xl" /> : <FiMenu className="text-2xl flex justify-start" />}
                 </button>
@@ -37,7 +37,7 @@ const POSDashboard = () => {
             </div>
             
             {/* Main Content */}
-            <div className={`flex-1 p-6 transition-all duration-300 ${sidebarOpen ? 'ml-60' : 'ml-16'}`}>
+            <div className={`flex-1 p-6 transition-all duration-300 w-[100%]`}>
                 <div className="flex justify-between items-center bg-gray-800 p-4 rounded mb-6">
                     <h4>Reports</h4>
                     <h4 className="text-center">POS System</h4>
