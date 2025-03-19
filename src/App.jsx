@@ -1,18 +1,21 @@
 import { useState } from 'react'
 import './App.css'
-import POSDashboard from './components/reports'
+import Dashboard from './components/Dashboard';
+import POSMain from './components/mainPage';
+
 
 function App() {
   
-
   return (
    
       <div className="h-[100vh] w-full">
-        <POSDashboard />
+        <Dashboard />
+        
+        <POSMain />
       </div>
      
     
   )
 }
 
-export default App
+export default App;
